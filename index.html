@@ -1,5 +1,4 @@
-<!DOCTYPE html><!-- This site was created in Webflow. http://www.webflow.com -->
-<!-- Last Published: Thu Aug 12 2021 21:40:35 GMT+0000 (Coordinated Universal Time) -->
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -40,9 +39,13 @@
     <div class="magic-juice w-embed w-script">
         <!-- START: Mobile Autoplay Video -->
         <script>
-            var mobilevideo = document.getElementsByTagName("video")[0];
+            window.addEventListener('load', ()=>{
+                console.log('window is loaded')
+                 var mobilevideo = document.getElementsByTagName("video")[0];
             mobilevideo.setAttribute("playsinline", "");
             mobilevideo.setAttribute("muted", "");
+            })
+           
         </script>
         <!-- END: Mobile Autoplay Video -->
 
@@ -97,7 +100,7 @@
                     </div>
                 </div><img src="https://uploads-ssl.webflow.com/61158fd8ed9fa099670670dc/61158fd8ed9fa019410670fe_Arrow%20Down.svg" data-w-id="d2adf426-3e23-fe80-a2a0-0096d15724d2" alt="" class="arrow-down" />
             </div>
-            <div data-poster-url="https://uploads-ssl.webflow.com/5d429c79a839ea86569af10c/5d429d4ec0e46e3d4e241015_720pish Dots BG HB-poster-00001.jpg" data-video-urls="https://uploads-ssl.webflow.com/61158fd8ed9fa099670670dc/61158fd8ed9fa0394f067113_720pish%20Dots%20BG%20HB-transcode.mp4,https://uploads-ssl.webflow.com/61158fd8ed9fa099670670dc/61158fd8ed9fa0394f067113_720pish%20Dots%20BG%20HB-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;https://uploads-ssl.webflow.com/5d429c79a839ea86569af10c/5d429d4ec0e46e3d4e241015_720pish Dots BG HB-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+            <div data-poster-url="https://uploads-ssl.webflow.com/5d429c79a839ea86569af10c/5d429d4ec0e46e3d4e241015_720pish Dots BG HB-poster-00001.jpg" data-video-urls="https://uploads-ssl.webflow.com/61158fd8ed9fa099670670dc/61158fd8ed9fa0394f067113_720pish%20Dots%20BG%20HB-transcode.mp4,https://uploads-ssl.webflow.com/61158fd8ed9fa099670670dc/61158fd8ed9fa0394f067113_720pish%20Dots%20BG%20HB-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;https://uploads-ssl.webflow.com/5d429c79a839ea86569af10c/5d429d4ec0e46e3d4e241015_720pishDotsBGHB-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
                     <source src="https://uploads-ssl.webflow.com/61158fd8ed9fa099670670dc/61158fd8ed9fa0394f067113_720pish%20Dots%20BG%20HB-transcode.mp4" data-wf-ignore="true" />
                     <source src="https://uploads-ssl.webflow.com/61158fd8ed9fa099670670dc/61158fd8ed9fa0394f067113_720pish%20Dots%20BG%20HB-transcode.webm" data-wf-ignore="true" />
                 </video></div>
